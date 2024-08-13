@@ -1,6 +1,6 @@
 // app.component.ts
 import { Component, inject, OnInit } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { RouterModule, RouterOutlet } from '@angular/router';
 import { ReactiveFormsModule, FormControl, FormsModule, FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { UserComponent } from '../user/user.component';
@@ -9,7 +9,7 @@ import { UserComponent } from '../user/user.component';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, FormsModule, ReactiveFormsModule, UserComponent, CommonModule],
+  imports: [RouterOutlet, FormsModule, ReactiveFormsModule, UserComponent, CommonModule,RouterModule],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'] 
 })
