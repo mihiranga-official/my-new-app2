@@ -1,0 +1,83 @@
+<!-- app.component.html -->
+<div class="form-container">
+  <form [formGroup]="userForm" (ngSubmit)="onSave()">
+    <div class="form-group">
+      <label for="epfno" class="form-label">EPF NO :</label>
+      <select class="select" name="cars" id="epfno">
+        <option value="test">test1</option>
+        <option value="test2">test2</option>
+        <option value="test3">test3</option>
+        <option value="test4">test4</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="nameInput" class="form-label">Name:</label>
+      <input class="nameInput" type="text" id="nameInput" formControlName="nameinput">
+    </div>
+
+    <div class="form-group">
+      <label for="typeDrop" class="form-label">Type :</label>
+      <select class="select" name="type" id="typeDrop">
+        <option value="test">test1</option>
+        <option value="test2">test2</option>
+        <option value="test3">test3</option>
+        <option value="test4">test4</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <button class="addbtnOne" type="submit">ADD (+)</button>
+    </div>
+
+  </form>
+
+</div>
+<table class="tbl">
+  <tr>
+    <th>SN</th>
+    <th>Epf NO</th>
+    <th>Name</th>
+    <th>Type</th>
+    <th>Active</th>
+    <th>Paying Rate</th>
+    <th>Edit Id</th>
+    <th>Absent</th>
+
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>1628</td>
+    <td>Sharma</td>
+    <td>24</td>
+    <td>24</td>
+    <td>24</td>
+    <td>24</td>
+    <td><button class="tbclass">X</button></td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>1615</td>
+    <td>Singh</td>
+    <td>32</td>
+    <td>32</td>
+    <td>32</td>
+    <td>32</td>
+    <td><button class="tbclass">X</button></td>
+
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>1627</td>
+    <td>Watson</td>
+    <td>41</td>
+    <td>41</td>
+    <td>41</td>
+    <td>41</td>
+    <div>
+      <td  ><button class="tbclass">X</button></td>
+    </div>
+
+  </tr>
+
+</table>
